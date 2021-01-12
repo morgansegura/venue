@@ -1,5 +1,5 @@
 import React from 'react'
-import { Featured, Header } from './components'
+import { Featured, Header, Venue } from './components'
 import './resources/styles.css'
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
 		<div>
 			<Header />
 			<Featured />
+			<Venue />
 		</div>
 	)
 }
