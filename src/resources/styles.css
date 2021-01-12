@@ -52,10 +52,34 @@ header .header_logo {
 }
 header .header_logo_venue {
 	font-size: 2.5rem;
+	color: #ffa800;
 }
 
 header .header_logo_title {
 	text-transform: uppercase;
+}
+
+/*====================
+		SIDE DRAWER
+======================*/
+
+.sidedrawer_logo_venue {
+	position: relative;
+	font-size: 2.5rem;
+	text-align: center;
+	padding: 1rem;
+	margin: 2rem;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.sidedrawer_logo_venue:before {
+	content: '';
+	position: absolute;
+	width: calc(100% - 1.125rem);
+	top: 0.5rem;
+	right: 0.5rem;
+	bottom: 0.5rem;
+	left: 0.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 /*====================
@@ -389,4 +413,9 @@ footer .footer_copyright {
 .MuiButton-contained.button_primary--outline:hover {
 	background-color: #ff4800;
 	color: white;
+}
+
+.MuiPaper-root.MuiDrawer-paper.MuiDrawer-paperAnchorRight.MuiPaper-elevation16 {
+	width: 290px;
+	background-color: #ffa800;
 }
