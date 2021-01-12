@@ -22,10 +22,10 @@ const Header = () => {
 		}
 	}
 	useEffect(() => {
-		window.addEventListener('scroll', () => handleScroll)
+		window.addEventListener('scroll', handleScroll)
 
 		return () => {
-			window.removeEventListener('scroll', () => handleScroll)
+			window.removeEventListener('scroll', handleScroll)
 		}
 	}, [])
 	const toggleDrawer = (anchor, open) => event => {
@@ -41,7 +41,9 @@ const Header = () => {
 	return (
 		<AppBar
 			style={{
-				backgroundColor: scrollHeader ? '#2f2f2f' : 'transparent',
+				backgroundColor: scrollHeader
+					? 'rgba(0,0,0,0.5)'
+					: 'transparent',
 				transition: 'background-color 0.3s ease-out',
 				boxShadow: 'none',
 				padding: '0.75rem 0',
