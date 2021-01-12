@@ -353,6 +353,7 @@ footer .footer_copyright {
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
+	display: flex;
 }
 .location_tag div {
 	background: #2c2c2c;
@@ -360,7 +361,7 @@ footer .footer_copyright {
 	text-transform: uppercase;
 	width: 220px;
 	margin: 0 auto;
-	font-size: 4.833rem;
+	font-size: 2.833rem;
 	padding: 15px 20px;
 	text-align: center;
 }
