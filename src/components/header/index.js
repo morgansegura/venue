@@ -1,11 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import MenuIcon from '@material-ui/icons/Menu'
 import IconButton from '@material-ui/core/IconButton'
+import { makeStyles } from '@material-ui/core/styles'
+
+import SideDrawer from '../side-drawer'
+
+const useStyles = makeStyles({
+	list: {
+		width: 290,
+	},
+	fullList: {
+		width: 'auto',
+	},
+})
 
 const Header = () => {
+	const anchor = 'right'
+	const [state, setState] = React.useState({
+		right: false,
+	})
+	const toggleDrawer = (anchor, open) => event => {
+		if (
+			event.type === 'keydown' &&
+			(event.key === 'Tab' || event.key === 'Shift')
+		) {
+			return
+		}
+
+		setState({ ...state, [anchor]: open })
+	}
 	return (
 		<AppBar
 			position='fixed'
@@ -25,10 +51,15 @@ const Header = () => {
 				<IconButton
 					arial-label='Menu'
 					color='inherit'
-					onClick={() => console.log('open')}>
+					onClick={toggleDrawer(anchor, true)}>
 					<MenuIcon />
 				</IconButton>
 			</Toolbar>
+			<SideDrawer
+				state={state}
+				anchor={anchor}
+				onClick={toggleDrawer(anchor, false)}
+			/>
 		</AppBar>
 	)
 }
