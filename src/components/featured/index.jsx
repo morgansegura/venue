@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Carousel } from '..'
+import { Carousel, CountdownTimer } from '..'
 
 const Featured = () => {
 	return (
@@ -9,6 +9,7 @@ const Featured = () => {
 			<div className='artist_name'>
 				<div className='wrapper'>The Roots</div>
 			</div>
+			<CountdownTimer />
 		</div>
 	)
 }
