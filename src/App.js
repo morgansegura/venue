@@ -1,6 +1,7 @@
 import React from 'react'
 import {
 	Featured,
+	Footer,
 	Header,
 	Highlights,
 	Location,
@@ -18,6 +19,7 @@ function App() {
 			<Highlights />
 			<Pricing />
 			<Location />
+			<Footer />
 		</div>
 	)
 }
