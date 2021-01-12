@@ -1,3 +1,4 @@
+export { default as Button } from './button'
 export { default as Carousel } from './carousel'
 export { default as Description } from './description'
 export { default as Discount } from './discount'

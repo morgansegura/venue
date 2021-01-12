@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
+import LocalActivityIcon from '@material-ui/icons/LocalActivity'
+
+import { Button } from '..'
 
 const Discount = () => {
 	const [count, setCount] = useState(0)
@@ -32,7 +35,7 @@ const Discount = () => {
 						<span className=''>OFF</span>
 					</div>
 				</ScrollAnimation>
-				<ScrollAnimation animateIn='slideInRight' delay={500}>
+				<ScrollAnimation animateIn='slideInRight'>
 					<div className='discount_description'>
 						<h3>Purchase Tickets before Jan 18th</h3>
 						<p>
@@ -42,7 +45,14 @@ const Discount = () => {
 							of the mobile tickets will be delayed and will not
 							be in your account...
 						</p>
-						<div></div>
+						<Button
+							className='button_primary'
+							size='large'
+							variant='contained'
+							startIcon={<LocalActivityIcon />}
+							href='https://morgansegura.com'>
+							Get Tickets
+						</Button>
 					</div>
 				</ScrollAnimation>
 			</div>

@@ -360,3 +360,18 @@ footer .footer_copyright {
 	padding: 15px 20px;
 	text-align: center;
 }
+
+/*====================
+        BUTTONS
+======================*/
+
+.MuiButton-contained.button_primary {
+	background-color: transparent;
+	border: 2px solid #ff4800;
+	color: #ff4800;
+	transition: all 0.3s ease-out;
+}
+.MuiButton-contained.button_primary:hover {
+	background-color: #ff4800;
+	color: white;
+}
