@@ -307,6 +307,10 @@ footer .footer_copyright {
 .pricing_wrapper .pricing_inner_wrapper {
 	border: 2px solid #ffa800;
 	padding: 50px 20px;
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .pricing_inner_wrapper .pricing_title {
@@ -366,12 +370,22 @@ footer .footer_copyright {
 ======================*/
 
 .MuiButton-contained.button_primary {
+	background-color: #ff4800;
+	border: 1px solid #ff4800;
+	color: white;
+	transition: all 0.3s ease-out;
+}
+.MuiButton-contained.button_primary:hover {
+	background-color: #ffa800;
+	border-color: #ffa800;
+}
+.MuiButton-contained.button_primary--outline {
 	background-color: transparent;
 	border: 2px solid #ff4800;
 	color: #ff4800;
 	transition: all 0.3s ease-out;
 }
-.MuiButton-contained.button_primary:hover {
+.MuiButton-contained.button_primary--outline:hover {
 	background-color: #ff4800;
 	color: white;
 }

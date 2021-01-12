@@ -51,7 +51,7 @@ const Discount = () => {
 							variant='contained'
 							startIcon={<LocalActivityIcon />}
 							href='https://morgansegura.com'>
-							Get Tickets
+							Purchase Tickets
 						</Button>
 					</div>
 				</ScrollAnimation>

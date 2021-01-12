@@ -1,5 +1,5 @@
 import React from 'react'
-import { Featured, Header, Highlights, Venue } from './components'
+import { Featured, Header, Highlights, Pricing, Venue } from './components'
 import './resources/styles.css'
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
 			<Featured />
 			<Venue />
 			<Highlights />
+			<Pricing />
 		</div>
 	)
 }
