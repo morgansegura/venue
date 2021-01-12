@@ -1,7 +1,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open sans', sans-serif;
 }
 
 .font_righteous {
@@ -32,6 +32,13 @@ body {
 }
 
 /*====================
+        Main
+======================*/
+.main {
+	overflow-x: hidden;
+}
+
+/*====================
         HEADER
 ======================*/
 
@@ -44,7 +51,7 @@ header .header_logo {
 	flex-grow: 1;
 }
 header .header_logo_venue {
-	font-size: 40px;
+	font-size: 2.5rem;
 }
 
 header .header_logo_title {
@@ -64,19 +71,19 @@ footer {
 }
 
 footer .footer_copyright {
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 /*====================
-        CARROUSEL
+        carousel
 ======================*/
 
-.carrousel_wrapper {
+.carousel_wrapper {
 	height: 700px;
 	overflow: hidden;
 }
 
-.carrousel_image {
+.carousel_image {
 	background-size: cover !important;
 }
 
@@ -101,7 +108,7 @@ footer .footer_copyright {
 	margin: 6px;
 	text-align: center;
 	color: #fff;
-	font-size: 40px;
+	font-size: 2.5rem;
 	padding: 11px 70px 10px 70px;
 	text-transform: uppercase;
 }
@@ -118,7 +125,7 @@ footer .footer_copyright {
 
 .countdown_wrapper .countdown_top {
 	background: #ff4800;
-	font-size: 19px;
+	font-size: 1.1875rem;
 	padding: 10px;
 	display: inline-block;
 	text-transform: uppercase;
@@ -142,7 +149,7 @@ footer .footer_copyright {
 
 .countdown_wrapper .countdown_tag {
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 1.25rem;
 	padding-left: 7px;
 }
 
@@ -201,14 +208,14 @@ footer .footer_copyright {
 }
 
 .vn_item .vn_title {
-	font-size: 28px;
+	font-size: 1.75rem;
 	margin: 90px 0px 20px 0px;
 	border-bottom: 1px solid #5d5d5d;
 	padding-bottom: 10px;
 }
 
 .vn_item .vn_desc {
-	font-size: 30px;
+	font-size: 1.75rem;
 	font-weight: 300;
 	margin-bottom: 90px;
 }
@@ -221,12 +228,12 @@ footer .footer_copyright {
 	text-align: center;
 	text-transform: uppercase;
 	color: #2c2c2c;
-	font-size: 52px;
+	font-size: 3.25rem;
 }
 
 .highlight_wrapper .highlight_description {
 	line-height: 30px;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 300;
 	border-top: 1px solid #dddddd;
 	border-bottom: 1px solid #dddddd;
@@ -238,27 +245,27 @@ footer .footer_copyright {
 	padding: 70px 0px;
 }
 
-.discount_wrapper .discount_porcentage {
+.discount_wrapper .discount_percentage {
 	padding-right: 100px;
 }
 
-.discount_wrapper .discount_porcentage span:nth-child(1) {
+.discount_wrapper .discount_percentage span:nth-child(1) {
 	color: #ff4800;
-	font-size: 125px;
-	font-weight: 400;
+	font-size: 7.8125rem;
+	font-weight: 600;
 	display: block;
 	line-height: 120px;
 }
 
-.discount_wrapper .discount_porcentage span:nth-child(2) {
+.discount_wrapper .discount_percentage span:nth-child(2) {
 	color: #2c2c2c;
-	font-size: 50px;
+	font-size: 3.125rem;
 	font-weight: 400;
 	display: block;
 }
 
 .discount_wrapper .discount_description h3 {
-	font-size: 34px;
+	font-size: 2.125rem;
 	font-weight: 100;
 	margin: 0px;
 	color: #2c2c2c;
@@ -266,7 +273,7 @@ footer .footer_copyright {
 
 .discount_wrapper .discount_description p {
 	line-height: 30px;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 300;
 }
 
@@ -282,7 +289,7 @@ footer .footer_copyright {
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 50px;
+	font-size: 3.125rem;
 	margin: 0;
 }
 
@@ -309,18 +316,18 @@ footer .footer_copyright {
 	padding-bottom: 20px;
 }
 .pricing_inner_wrapper .pricing_title span:nth-child(1) {
-	font-size: 50px;
+	font-size: 3.125rem;
 	display: block;
 }
 .pricing_inner_wrapper .pricing_title span:nth-child(2) {
 	text-transform: uppercase;
-	font-size: 28px;
+	font-size: 1.75rem;
 	font-weight: 300;
 }
 .pricing_inner_wrapper .pricing_description {
 	color: #b8b8b8;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 0.875rem;
 	text-align: center;
 	padding: 20px 0px;
 	min-height: 70px;
@@ -349,7 +356,7 @@ footer .footer_copyright {
 	text-transform: uppercase;
 	width: 220px;
 	margin: 0 auto;
-	font-size: 29px;
+	font-size: 4.833rem;
 	padding: 15px 20px;
 	text-align: center;
 }

@@ -1,13 +1,14 @@
 import React from 'react'
-import { Featured, Header, Venue } from './components'
+import { Featured, Header, Highlights, Venue } from './components'
 import './resources/styles.css'
 
 function App() {
 	return (
-		<div>
+		<div className='main'>
 			<Header />
 			<Featured />
 			<Venue />
+			<Highlights />
 		</div>
 	)
 }
