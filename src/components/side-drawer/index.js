@@ -7,11 +7,7 @@ import ListItem from '@material-ui/core/ListItem'
 
 const SideDrawer = ({ anchor, state, onClick }) => {
 	return (
-		<Drawer
-			anchor={anchor}
-			open={state[anchor]}
-			onClose={onClick}
-			style={{ backgroundColor: '#393939', width: '290' }}>
+		<Drawer anchor={anchor} open={state[anchor]} onClose={onClick}>
 			<List components='nav'>
 				<ListItem button onClick={() => console.log('Event Times')}>
 					Event Times

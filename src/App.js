@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Header } from './components'
 import './resources/styles.css'
 
 function App() {
 	return (
-		<Fragment>
+		<div>
 			<Header />
-		</Fragment>
+		</div>
 	)
 }
 

@@ -1,27 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import MenuIcon from '@material-ui/icons/Menu'
 import IconButton from '@material-ui/core/IconButton'
-import { makeStyles } from '@material-ui/core/styles'
 
 import SideDrawer from '../side-drawer'
 
-const useStyles = makeStyles({
-	list: {
-		width: 290,
-	},
-	fullList: {
-		width: 'auto',
-	},
-})
-
 const Header = () => {
 	const anchor = 'right'
-	const [state, setState] = React.useState({
+	const [state, setState] = useState({
 		right: false,
 	})
+	const [scrollHeader, setScrollHeader] = useState(false)
+
+	const handleScroll = () => {
+		if (window.scrollY > 0) {
+			setScrollHeader(true)
+		} else {
+			setScrollHeader(false)
+		}
+	}
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll)
+
+		return () => {
+			window.removeEventListener('scroll', () => handleScroll)
+		}
+	}, [])
 	const toggleDrawer = (anchor, open) => event => {
 		if (
 			event.type === 'keydown' &&
@@ -34,9 +40,9 @@ const Header = () => {
 	}
 	return (
 		<AppBar
-			position='fixed'
 			style={{
-				backgroundColor: '#2f2f2f',
+				backgroundColor: scrollHeader ? '#2f2f2f' : 'transparent',
+				transition: 'background-color 0.3s ease-out',
 				boxShadow: 'none',
 				padding: '0.75rem 0',
 			}}>
