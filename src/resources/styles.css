@@ -27,7 +27,9 @@ body {
 }
 
 .center_wrapper {
-	width: 900px;
+	max-width: 900px;
+	padding-left: 2rem;
+	padding-right: 2rem;
 	margin: 0 auto;
 }
 
@@ -87,7 +89,7 @@ header .header_logo_title {
 ======================*/
 
 footer {
-	padding: 50px 0px;
+	padding: 50px 0px 150px 0;
 	text-align: center;
 	font-size: 60px;
 	color: #ffffff;
@@ -113,28 +115,40 @@ footer .footer_copyright {
 
 .artist_name {
 	position: absolute;
+	width: 100%;
+	max-width: 250px;
 	top: 50%;
 	left: 50%;
-	width: 400px;
-	height: 160px;
+	display: flex;
+	/* width: 400px;
+	height: 160px; */
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	border: 2px solid white;
 }
 
 .artist_name .wrapper {
+	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
 	border: 2px solid white;
-	height: 121px;
+	max-width: 250px;
+	width: 100%;
 	margin: 6px;
-	text-align: center;
 	color: #fff;
-	font-size: 2.5rem;
-	padding: 11px 70px 10px 70px;
+	font-size: 1.75rem;
+	/* padding: 11px 70px 10px 70px; */
+	padding: 2rem 0;
 	text-transform: uppercase;
+}
+
+@media (min-width: 767px) {
+	.artist_name .wrapper {
+		max-width: 320px;
+		font-size: 2.25rem;
+	}
 }
 
 /*====================
@@ -162,10 +176,10 @@ footer .footer_copyright {
 }
 
 .countdown_wrapper .countdown_time {
-	font-size: 70px;
+	font-size: 3.125rem;
 	border-right: 1px solid #f44336;
 	margin-right: 14px;
-	padding-right: 49px;
+	padding-right: 1.25rem;
 }
 .countdown_wrapper .countdown_item:last-child .countdown_time {
 	border: none;
@@ -173,8 +187,8 @@ footer .footer_copyright {
 
 .countdown_wrapper .countdown_tag {
 	text-transform: uppercase;
-	font-size: 1.25rem;
-	padding-left: 7px;
+	font-size: 0.75rem;
+	padding-left: 0;
 }
 
 /*====================
@@ -183,11 +197,11 @@ footer .footer_copyright {
 
 .vn_wrapper {
 	display: flex;
-	padding: 170px 0px;
+	flex-direction: column;
+	align-items: center;
+	padding: 90px 0px;
 }
-
 .vn_item {
-	width: 50%;
 	color: #ffffff;
 	text-align: center;
 }
@@ -266,6 +280,7 @@ footer .footer_copyright {
 
 .discount_wrapper {
 	display: flex;
+	flex-direction: column;
 	padding: 70px 0px;
 }
 
@@ -319,11 +334,12 @@ footer .footer_copyright {
 
 .pricing_wrapper {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
+
 .pricing_wrapper .pricing_item {
 	flex-grow: 1;
-	width: 33%;
 	padding: 20px;
 	box-sizing: border-box;
 }
@@ -418,4 +434,36 @@ footer .footer_copyright {
 .MuiPaper-root.MuiDrawer-paper.MuiDrawer-paperAnchorRight.MuiPaper-elevation16 {
 	width: 290px;
 	background-color: #ffa800;
+}
+
+@media (min-width: 767px) {
+	footer {
+		padding: 50px 0px;
+	}
+	.vn_wrapper,
+	.discount_wrapper {
+		flex-direction: row;
+		padding: 170px 0px;
+	}
+	.vn_item {
+		width: 50%;
+	}
+	.pricing_wrapper {
+		flex-direction: row;
+	}
+	.pricing_wrapper .pricing_item {
+		flex-grow: 1;
+		width: 33%;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	.countdown_wrapper .countdown_tag {
+		padding-left: 7px;
+		font-size: 1.25rem;
+	}
+	.countdown_wrapper .countdown_time {
+		font-size: 4.375rem;
+		margin-right: 14px;
+		padding-right: 49px;
+	}
 }
