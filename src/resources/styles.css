@@ -266,7 +266,7 @@ footer .footer_copyright {
 	text-align: center;
 	text-transform: uppercase;
 	color: #2c2c2c;
-	font-size: 3.25rem;
+	font-size: 2.5rem;
 }
 
 .highlight_wrapper .highlight_description {
@@ -437,6 +437,9 @@ footer .footer_copyright {
 }
 
 @media (min-width: 767px) {
+	.highlight_wrapper h2 {
+		font-size: 3.25rem;
+	}
 	footer {
 		padding: 50px 0px;
 	}
